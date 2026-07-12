@@ -2,7 +2,7 @@ FROM eclipse-temurin:25-jre
 
 WORKDIR /server
 
-COPY velocity.jar velocity.jar
+COPY "velocity (3).jar" velocity.jar
 COPY velocity.toml velocity.toml
 
 EXPOSE 25565
