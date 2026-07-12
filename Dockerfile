@@ -2,9 +2,8 @@ FROM eclipse-temurin:25-jre
 
 WORKDIR /server
 
-COPY velocity.jar velocity.jar
-COPY velocity.toml velocity.toml
+COPY . .
 
 EXPOSE 25565
 
-CMD ["java", "-Xms512M", "-Xmx512M", "-jar", "velocity.jar"]
+CMD ["sh", "-c", "java -Xms512M -Xmx512M -jar *.jar"]
